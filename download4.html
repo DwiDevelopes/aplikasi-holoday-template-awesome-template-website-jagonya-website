@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav icon  -->
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- box icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- swiper demos  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css" integrity="sha256-X/I4f+GJaSu0LvHV2pCGrcnEZt8PtzDJXU5pWf8rv2A=" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header  -->
+    <header>
+        <!-- nav  -->
+        <div class="nav container">
+            <a href="index.html" class="logo">Holo <span>Day</span></a>
+            <div class="nav-icons">
+            <a href="download-files/HolodayTemplate(4).zip" download=""><i class="bx bxs-download"></i></a>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+
+            <!-- menu  -->
+            <div class="menu">
+                <img src="img/tm4.jpg" height="500px" width="10px" alt="">
+                <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <!-- video  -->
+   <div class="video-container container">
+   </div>
+
+    <!-- About -->
+    <div class="about container">
+        <h2>Liberty Market Template</h2>
+        <p>Liberty NFT Market is a professional website design for NFT related websites. This HTML CSS template is based on Bootstrap version 5. There are 5 HTML pages included in this template for maximum flexibility and customization options. This theme is based on neon color graphics.
+        </p>
+    </div>
+
+    <!-- Screenshots  -->
+    <div class="screenshots container">
+        <h2>ScreenShots</h2>
+        <div class="screenshots-content">
+             <img src="img/tm4.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Download  -->
+    <div class="download">
+        <h2>Download Holoday Template</h2>
+        <div class="download-links">
+            <a href="download-files/HolodayTemplate(4).zip" download="">Android</a>
+            <a href="download-files/HolodayTemplate(4).zip" download="">IOS</a>
+            <a href="download-files/HolodayTemplate(4).zip" download="">PC/Laptop</a>
+        </div>
+    </div>
+
+
+<style>
+/* Google fonts  */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+}
+/* variables */
+/* --main-color: #fa5353; */
+:root{
+    --main-color: crimson;
+    --dark-color: #1b182b;
+    --light-color: #322f40;
+    --text-color: hsl(0,0%,91%);
+}
+/* ::selection{
+    color: var(--text-color);
+    background: var(--main-color);
+} */
+/* section{
+    padding: 8rem 0 8rem;
+} */
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+    background: var(--dark-color);
+}
+/* header  */
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--dark-color);
+    z-index:100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+}
+.logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+    z-index: 200;
+}
+.logo span{
+    color: var(--main-color);
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    z-index: 200;
+}
+.nav-icons .bx{
+    font-size: 20px;
+    height: 44px;
+    width: 44px;
+    display: grid;
+    place-items: center;
+    color: var(--text-color);
+    background: var(--light-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: var(--light-color);
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+.menu-icon div{
+    display: block;
+    background: var(--text-color);
+    height: 2px;
+    width: 25px;
+    transition: 0.3s;
+}
+.move .line1{
+    transform:  rotate(-45deg) translate(-5px, 5px);
+}
+.move .line2{
+    opacity: 0;
+}
+.move .line3{
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* menu  */
+.menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 14, 0.9);    
+    z-index: 100;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    /*144  baad m  */
+    clip-path: circle(0% at 100% 0%);
+}
+.menu.active{
+    clip-path: circle(144% at 100% 0%);
+}
+.menu img{
+    width: 800px;
+}
+.navbar{
+    display: grid;
+    row-gap: 1rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.navbar a{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.2s;
+}
+.navbar a:hover{
+    border-bottom: 4px solid var(--main-color);
+    font-size: 1.8rem;
+}
+
+/* Home  */
+.home{
+    position: relative;
+    min-height: 540px;
+    display: flex;
+    align-items:  center;
+    justify-content: flex-end;
+    margin-top: 5rem;
+    background: rgba(0, 0, 0, 0.3);    
+}
+.home img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.4rem;
+    z-index: -1;
+}
+.home-text{
+    padding-right: 4rem;
+    text-align: right;
+}
+.home-text h1{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    /* color: var(--dark-color); */
+    border-bottom: 1px solid white;
+    /* margin-bottom: 1rem; */
+    font-weight: 900;
+}
+.home-text H3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.btn{
+    background: var(--main-color);
+    padding: 15px 20px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%, 0% 68%);
+}
+.btn:hover{
+    background: var(--light-color);
+    transition: 0.3s all linear;
+}
+
+/* trending section  */
+.heading{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.heading .bx{
+    font-size: 21px;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 10px;
+    border-radius: 5rem;
+}
+.heading h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.box{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 0.5rem;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.box .box-text{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: hsl(227,14%,20%,0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 0.5rem;
+}
+.box .box-text h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box .box-text h3{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+.rating-download{
+    display: flex;
+    justify-content: space-between;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    background: hsl(0, 0%, 100%,0.4);
+    padding: 4px 10px;
+    border-radius: 0.5rem;
+}   
+.rating .bx{
+    color: #faf102;
+    font-size: 0.9rem;
+}
+.rating span{
+    color: #faf102;
+    font-size: 0.9rem;
+}
+.box-btn .bx{
+    padding: 8px;
+    background: var(--text-color);
+    border-radius: 5rem;
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 20px;
+}
+.box-btn .bx:hover{
+    background: var(--dark-color);
+}
+
+/* New  */
+.new-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    gap: 1.2rem;
+}
+
+.next-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.next-page a{
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.next-page a:hover{
+    background: var(--light-color);
+    transition: 0.3s all linear;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.copyright p{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+
+/* download page  */
+.video-container video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.video-container{
+    margin-top: 5rem ;
+}
+.about{
+    margin-top: 2rem;
+}
+.about h2{
+    display: inline-flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 4px solid var(--main-color);
+}
+.about p{
+    font-size: 0.938rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.screenshots h2{
+    display: inline-flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 4px solid var(--main-color);
+    margin: 1.6rem 0;
+}
+.screenshots-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 10px;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+.screenshots-content img{
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.download{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.download h2{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1.6rem 0;
+}
+.download-links{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+.download-links a{
+    text-align: center;
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.download-links a:hover{
+    background: var(--light-color);
+    transition: 0.3s all linear;
+}
+</style>
+    <!-- link to js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js"></script>
+    <script>
+      let menu = document.querySelector('.menu-icon');
+
+// 144 
+
+let navbar = document.querySelector('.menu');
+
+
+menu.onclick = () =>{
+    menu.classList.toggle('move');
+    navbar.classList.toggle('active');
+
+}
+// swiper 
+var swiper = new Swiper(".trending-content", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay:{
+        delay:3000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1068: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+    </script>
+</body>
+</html>
